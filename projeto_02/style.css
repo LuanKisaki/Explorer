@@ -23,14 +23,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: linear-gradientbackground: linear-gradient(180deg, rgba(227, 255, 248, 0.00) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+
 }
 
 .primary-color {
   color: var(--primary-color);
-}
-
-#selected {
-  font-weight: var(--font-bold);
 }
 
 header {
@@ -58,6 +56,15 @@ header {
   list-style: none;
   display: flex;
   gap: 3rem;
+}
+
+.header__items {
+  opacity: 0.5;
+}
+
+.header__items:hover, #selected {
+  font-weight: var(--font-bold);
+  opacity: 1;
 }
 
 .header__link {
