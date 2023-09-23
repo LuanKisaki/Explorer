@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>projeto_03</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,700;1,600&family=Poppins&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="banner"></div>
+  <div class="form__">
+    <div class="banner__text">
+      <h1 class="banner__title">
+        Crie e compartilhe seu evento.
+      </h1>
+      <h3 class="banner__description">
+        O primeiro passo, é preencher esse formulário de inscrição.
+      </h3>
+    </div>
+    <form action="get">
+      <div class="form">
+        <div class="form__title">
+          <h2>
+            Informações do Evento
+          </h2>
+        </div>
+
+        <div class="form__section">
+          <div class="form__label">
+            <label for="event_title">
+              Título do evento
+            </label>
+            <span>(mínimo 8 caracteres)</span>
+          </div>
+          <input type="text" id="event_title">
+        </div>
+
+        <div class="form__section">
+
+          <div class="form__label">
+            <label for="event_link">
+              Link do evento
+            </label>
+            <span>(comece com https://)</span>
+          </div>
+          <input type="text" id="event_link">
+        </div>
+
+        <div class="form__section">
+          <div class="form__label">
+            <label for="event_whatsapp">
+              Whatsapp para contato
+            </label>
+            <span>(somente números)</span>
+          </div>
+          <input type="text" id="event_whatsapp">
+        </div>
+
+        <div class="form__section">
+          <div class="form__label">
+            <label for="event_details">
+              Informações extras
+            </label>
+          </div>
+          <textarea name="" id="event_details"></textarea>
+        </div>
+
+        <div class="form__section">
+          <div class="form__label">
+            <label for="event_category">
+              Categoria
+            </label>
+          </div>
+          <input type="text" id="event_category" placeholder="Tipo de evento">
+        </div>
+
+        <div class="form__title">
+          <h2>
+            Privacidade
+          </h2>
+        </div>
+
+        <div class="form__section">
+          <div class="form__label">
+            <label for="privacy_adm_email">
+              E-mail do administrador
+            </label>
+            <span>(digite um email válido)</span>
+          </div>
+          <input type="text" id="privacy_adm_email">
+        </div>
+
+        <div class="form__section">
+          <div class="form__label">
+            <label for="privacy_password">
+              Senha de acesso para os participantes
+            </label>
+            <span>(mínimo 8 caracteres)</span>
+          </div>
+          <input type="text" id="privacy_password">
+        </div>
+
+        <div class="form__section">
+          <div class="form__label">
+            <input type="checkbox" name="privacy_event" id="privacy_event" checked="">
+            <label for="privacy_event">Evento privado</label>
+          </div>
+        </div>
+
+        <div class="form__title">
+          <h2>
+            Dia e hora
+          </h2>
+        </div>
+
+        <div class="form__section">
+          <div class="form__label">
+            <label for="datetime_date">
+              Data
+            </label>
+          </div>
+          <input type="text" id="datetime_date">
+          <div class="form__label">
+            <label for="datetime_start">
+              Das
+            </label>
+          </div>
+          <input type="text" id="datetime_start" placeholder="19:00">
+          <div class="form__label">
+            <label for="datetime_end">
+              Até
+            </label>
+          </div>
+          <input type="text" id="datetime_end" placeholder="20:00">
+        </div>
+      </div>
+      <div class="form__save">
+        <input type="submit" value="Salvar evento" class="form__button">
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
