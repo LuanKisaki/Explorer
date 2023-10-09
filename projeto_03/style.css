@@ -49,6 +49,7 @@ input[type="text"] {
   width: 100%;
   min-height: 56px;
   padding-left: 24px;
+  box-sizing: border-box;
 }
 
 textarea {
@@ -59,6 +60,23 @@ textarea {
   min-height: 168px;
   resize: none;
 }
+
+.row {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.flex-2 {
+  	flex-basis: 50%;
+}
+
+.flex-4 {
+  flex-basis: 25%;
+}
+
+
 
 .banner {
   background-color: #121214;
@@ -107,16 +125,11 @@ form {
   padding: 64px;
 }
 
-.form__ {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-items: space-between;
-}
-
 .form__section {
   width: 100%;
   margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
 }
 
 .form__title {
@@ -128,7 +141,7 @@ form {
 .form__label {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: space-between;
   gap: 12px;
   margin-bottom: 8px;
 }
@@ -155,10 +168,6 @@ form {
 .form__datetime {
   display: flex;
   align-items: center;
-}
-
-.event_title {
-
 }
 
 .form__save {

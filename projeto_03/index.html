@@ -15,7 +15,7 @@
 
 <body>
   <div class="banner"></div>
-  <div class="form__">
+  <div class="section">
     <div class="banner__text">
       <h1 class="banner__title">
         Crie e compartilhe seu evento.
@@ -121,24 +121,26 @@
         </div>
 
         <div class="form__section">
-          <div class="form__label">
-            <label for="datetime_date">
-              Data
-            </label>
+          <div class="row">
+            <div class=" flex-2">
+              <label class="form__label" for="datetime_date">
+                Data
+              </label>
+              <input type="text" id="datetime_date">
+            </div>
+            <div class=" flex-4">
+              <label class="form__label" for="datetime_start">
+                Das
+              </label>
+              <input type="text" id="datetime_start" placeholder="19:00">
+            </div>
+            <div class=" flex-4">
+              <label class="form__label" for="datetime_end">
+                Até
+              </label>
+              <input type="text" id="datetime_end" placeholder="20:00">
+            </div>
           </div>
-          <input type="text" id="datetime_date">
-          <div class="form__label">
-            <label for="datetime_start">
-              Das
-            </label>
-          </div>
-          <input type="text" id="datetime_start" placeholder="19:00">
-          <div class="form__label">
-            <label for="datetime_end">
-              Até
-            </label>
-          </div>
-          <input type="text" id="datetime_end" placeholder="20:00">
         </div>
       </div>
       <div class="form__save">
