@@ -39,7 +39,7 @@
             </label>
             <span>(mínimo 8 caracteres)</span>
           </div>
-          <input type="text" id="event_title">
+          <input required  type="text" id="event_title">
         </div>
 
         <div class="form__section">
@@ -50,7 +50,7 @@
             </label>
             <span>(comece com https://)</span>
           </div>
-          <input type="text" id="event_link">
+          <input required  type="url" id="event_link">
         </div>
 
         <div class="form__section">
@@ -60,7 +60,7 @@
             </label>
             <span>(somente números)</span>
           </div>
-          <input type="text" id="event_whatsapp">
+          <input required type="tel" id="event_whatsapp" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
         </div>
 
         <div class="form__section">
@@ -69,7 +69,7 @@
               Informações extras
             </label>
           </div>
-          <textarea name="" id="event_details"></textarea>
+          <textarea id="event_details"></textarea>
         </div>
 
         <div class="form__section">
@@ -78,7 +78,12 @@
               Categoria
             </label>
           </div>
-          <input type="text" id="event_category" placeholder="Tipo de evento">
+          <select id="event_category" placeholder="Tipo de evento">
+            <option value="live">Ao vivo</option>
+            <option value="podcast">Podcast</option>
+            <option value="mentoria">Mentoria</option>
+          </select>
+          
         </div>
 
         <div class="form__title">
@@ -94,7 +99,7 @@
             </label>
             <span>(digite um email válido)</span>
           </div>
-          <input type="text" id="privacy_adm_email">
+          <input required  type="email" id="privacy_adm_email">
         </div>
 
         <div class="form__section">
@@ -104,12 +109,12 @@
             </label>
             <span>(mínimo 8 caracteres)</span>
           </div>
-          <input type="text" id="privacy_password">
+          <input required  type="password" id="privacy_password">
         </div>
 
         <div class="form__section">
           <div class="form__label">
-            <input type="checkbox" name="privacy_event" id="privacy_event" checked="">
+            <input required  type="checkbox" name="privacy_event" id="privacy_event" checked="">
             <label for="privacy_event">Evento privado</label>
           </div>
         </div>
@@ -126,19 +131,19 @@
               <label class="form__label" for="datetime_date">
                 Data
               </label>
-              <input type="text" id="datetime_date">
+              <input required  type="date" id="datetime_date">
             </div>
             <div class=" flex-4">
               <label class="form__label" for="datetime_start">
                 Das
               </label>
-              <input type="text" id="datetime_start" placeholder="19:00">
+              <input required  type="time" id="datetime_start" placeholder="19:00">
             </div>
             <div class=" flex-4">
               <label class="form__label" for="datetime_end">
                 Até
               </label>
-              <input type="text" id="datetime_end" placeholder="20:00">
+              <input required  type="time" id="datetime_end" placeholder="20:00">
             </div>
           </div>
         </div>
