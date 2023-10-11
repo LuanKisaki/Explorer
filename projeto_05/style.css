@@ -1,0 +1,128 @@
+:root {
+  --bg-color: #ECE9FD;
+  --text-default: #090039;
+  --text-primary: #7158EF;
+  --text-dark-gray: rgb(10 0 57 / 64%);
+  --weight-thin: 100;
+  --weight-extralight: 200;
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+  --weight-black: 900;
+}
+
+h1 {
+  font-size: 72px;
+  line-height: 80px;
+  letter-spacing: -2px;
+  font-weight: var(--weight-extrabold);
+}
+
+h2 {
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  font-weight: var(--weight-extrabold);
+}
+
+h3 {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0px;
+  font-weight: var(--weight-extrabold);
+}
+h4 {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  font-weight: var(--weight-bold);
+}
+h5 {
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  font-weight: var(--weight-regular);
+}
+p {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: var(--weight-regular);
+}
+
+*, html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: 'Epilogue', sans-serif; 
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.hero { 
+  margin: 60px 23px 66px;
+}
+
+.left {
+  display:flex;
+  flex-direction:column;
+  gap: 15px;
+  max-width: 491px;
+}
+
+.left__details {
+  text-transform: uppercase;
+  color: var(--text-primary);
+  font-weight: var(--weight-regular);
+  margin-bottom: 2px;
+}
+
+.left__title {
+  font-weight: var(--weight-extrabold);
+}
+
+.left__description {
+  color: var(--text-dark-gray);
+  line-height: 32px;
+  margin-bottom: 17px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 77px;
+}
+
+.right__dialog {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+
+@media (min-width: 376px) {
+  .hero {
+    display: flex;
+    flex-direction: row;
+    gap: 116px;
+    margin: 80px 284px 108px 135px;
+  }
+  .left__title {
+    margin-bottom: 16px;
+  }
+  .left__description {
+    margin-bottom: 13px;
+  }
+}
+
