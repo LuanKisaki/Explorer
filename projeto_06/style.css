@@ -1,0 +1,116 @@
+:root {
+  --color-primary: #A54328;
+  --text-regular: 400;
+  --text-bold: 700;
+  --size-40: 40px;
+  --size-28: 28.34px;
+  --size-20: 20px;
+  --size-14: 14.17px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+html {
+  font-family: 'Source Serif 4', serif;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  color: var(--color-primary)
+}
+
+main {
+  margin: 53px 37px 54px;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.recipe__title, .make__title {
+  font-size: var(--size-28);
+  font-weight: var(--text-bold);
+}
+
+.recipe__details, .make__details {
+  font-size: var(--size-14);
+  font-weight: var(--text-bold);
+}
+
+.recipe {
+  display: flex;
+  flex-direction: column;
+  gap: 46.77px
+}
+
+.recipe__image {
+  max-width: 300px;
+  max-height: 177px;
+}
+
+.make {
+  display: flex;
+  flex-direction: column;
+  gap: 26.14px;
+}
+
+.make__details {
+  display: flex;
+  flex-direction: column;
+  gap: 18.42px;
+}
+
+.make__ingredients, .make__steps {
+  padding-left: 1.6rem; 
+  margin-bottom: 20px;
+}
+
+.make__report {
+  background-color: var(--color-primary);
+  border-radius: 5.67px;
+  padding: 7.44px 12.62px;
+  font-weight: 500;
+  font-size: 9.92px;
+  line-height: 17px;
+  border: none;
+  color: #fff;
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-image: url("images/old-paper-texture-beige-craft-cardboard-vintage-canvas-surface.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main {
+    flex-direction: row;
+    gap: 189px;
+  }
+  .recipe {
+    max-width: 435px;
+  }
+  .recipe__image {
+    max-width: 411px;
+    max-height: 245px;
+  }
+  .recipe__title, .make__title {
+    font-size: var(--size-40);
+  }
+  .recipe__description, .make__recipe, .make__details {
+    font-size: var(--size-20);
+  }
+  .make__report {
+    font-size: 14px;
+    padding: 10.5px 19.5px;
+  }
+  .make {
+    max-width: 525px;
+  }
+
+}
