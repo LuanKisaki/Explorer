@@ -45,7 +45,8 @@ main {
 .recipe {
   display: flex;
   flex-direction: column;
-  gap: 46.77px
+  gap: 46.77px;
+  max-width: 600px;
 }
 
 .recipe__image {
@@ -57,6 +58,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 26.14px;
+  max-width: 600px;
 }
 
 .make__details {
@@ -81,7 +83,7 @@ main {
   color: #fff;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1280px) {
   body {
     background-image: url("images/old-paper-texture-beige-craft-cardboard-vintage-canvas-surface.png");
     display: flex;
