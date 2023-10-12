@@ -1,0 +1,97 @@
+:root {
+  --color-default: #E1E1E6;
+  --color-primary: #02799D;
+  --color-secondary: #C4C4CC;
+  --bg-default: #121214;
+  --bg-primary: #202024;
+  --border-card: 2px solid #323238;
+  --weight-black: 900;
+  --weight-semibold: 600;
+  --size-58: 58.29px;
+  --size-35: 35.3px;
+  --size-32: 32px;
+  --size-19: 19.38px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body{
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Mulish, serif;
+  color: var(--color-default);
+  background-color: var(--bg-default)
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 62px;
+  align-items: start;
+  margin: 73px 100px 114px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.header__title {
+  font-size: var(--size-58);
+  color: var(--color-primary);
+}
+
+.header__description {
+  font-size: var(--size-32);
+}
+
+.galaxies {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px 30px;
+  display: grid;
+}
+
+.galaxies__card {
+  background-color: var(--bg-primary);
+  border: var(--border-card);
+  flex-direction: column;
+  border-radius: 8px;
+  max-height: 448px;
+  overflow: hidden;
+  display: flex;
+  width: 366px;
+  gap: 13.5px;
+}
+
+.galaxies__image {
+  max-height: 177px;
+  width: 100%;
+
+}
+
+.galaxies__text {
+  flex-direction: column;
+  padding: 0 22.5px 26.5px;
+  display:flex;
+  gap: 24px;
+}
+
+.galaxies__title {
+  font-weight: var(--weight-black);
+  font-size: var(--size-35);
+
+}
+.galaxies__description {
+  color: var(--color-secondary);
+  font-size: var(--size-19)
+}
+
+
